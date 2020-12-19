@@ -1,0 +1,138 @@
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>JS</title> 
+<script type='text/javascript'>
+function second1() {
+alert( " Hello World " );
+}
+function second2() { 
+let x=Math.random() , y=Math.random() , t; 
+t=x+y; 
+alert(x + " + " + y + " = " + t); 
+} 
+function second3() { 
+const x=5 
+let y=Math.random(), z=Math.random() , t; 
+t=x+y+z; 
+alert(x + " + " + y + " + " + z + " = " + t); 
+} 
+function second4() { 
+let x=2, y='Привет'; 
+alert(y + " / " + x + " = " + y/x); 
+} 
+function second5() { 
+let x=',м', y='Привет', t='ир!'; 
+alert(y + " + " + x + " + " + t + " = " + y+x+t); 
+} 
+function second6() { 
+let x; 
+
+alert(x); 
+} 
+function second7() { 
+let x=false,y='10',t; 
+alert(x);x=x+''; 
+alert(x + ' = ' + typeof(x)); 
+x='1000';t=x/y; 
+alert(x + ' / ' + y + " = " + t + typeof(t)); 
+t=333;y='777';x=y+t; 
+alert(y + ' + ' + t + " = " + x + typeof(x)); 
+} 
+function second8() { 
+let a=1, b=-8, c=12; 
+var d=b*b-4*a*c; 
+var x1,x2; 
+x1=(-b+Math.sqrt(d))/(2*a); 
+x2=(-b-Math.sqrt(d))/(2*a); 
+alert(x1 + ";" + x2); 
+} 
+function second9() { 
+alert("Диапазон от 1 до 10"); 
+alert("Шаг 1"); 
+for (let x=1; x<11; x++){ 
+y=x*x+x*x*x-3*x; 
+alert ("Значения функции " + y) 
+} 
+} 
+function second10(){ 
+var arr=[]; 
+for(var i=0; i<5; i++){ 
+arr[i]=Math.random()*(10-1)+1 
+} 
+b=0; 
+for(var i=0; i<5; i++){
+b=b+(arr[i]*arr[i]);
+}
+alert(b); 
+
+} 
+function second11(){ 
+let a=45; 
+alert(a); 
+alert(a.toString([2])); 
+} 
+function second12(){ 
+var a=['алфавит', 'апельсин', 'градация'], b=0; 
+alert('алфавит ' + 'апельсин ' + 'градация'); 
+for (let i=0; i<=2; i++){
+	for (let n=0; n<=a[i].length; n++) {
+		if (a[i].charAt(n)=='а') b=b+1;
+	}
+}
+alert(b);
+}
+function second13() {
+alert( " Иванов Иван, Петров Пётр, Ульянова Ульяна, " );
+let a=[],s=[" Иванов Иван, Петров Пётр, Ульянова Ульяна, 1"],d
+for (let i=0;;i++) {
+	a[i]=s[i].slice(0,s[i].indexOf(','));
+	s[i+1]=s[i].slice(s[i].indexOf(',')+1,s[i].indexOf('1')); //копир в другую строку начиная с след слова
+	if (s[i+1].length<4)break
+	d=i;
+}
+for (let i=0;i<=d+1;i++)
+{alert(a[i]);}
+}
+function second14() {
+alert( " Привет, мир! " );
+}
+
+function second15() {
+let rt='dfgdf'
+alert( rt );
+dama();
+}
+function dama(){let rt='235235'
+alert(rt);
+}
+function dr(d,r){
+return d+r;
+}
+
+function second16() {
+alert(dr(2,5));
+}
+ </script>
+</head> 
+<body> 
+<form>
+<input value='Задание 1' onclick='second1()' type='button' ><br> 
+<input value='Задание 2' onclick="second2()" type='button' ><br> 
+<input value='Задание 3' onclick="second3()" type='button' ><br> 
+<input value='Задание 4' onclick="second4()" type='button' ><br> 
+<input value='Задание 5' onclick="second5()" type='button' ><br> 
+<input value='Задание 6' onclick="second6()" type='button' ><br> 
+<input value='Задание 7' onclick="second7()" type='button' ><br> 
+<input value='Задание 8' onclick="second8()" type='button' ><br> 
+<input value='Задание 9' onclick="second9()" type='button' ><br> 
+<input value='Задание 10' onclick="second10()" type='button' ><br>
+<input value='Задание 11' onclick="second11()" type='button' ><br>
+<input value='Задание 12' onclick="second12()" type='button' ><br>
+<input value='Задание 13' onclick="second13()" type='button' ><br>
+<input value='Задание 14' onclick="second14()" type='button' ><br>
+<input value='Задание 15' onclick="second15()" type='button' ><br>
+<input value='Задание 16' onclick="second16()" type='button' ><br>
+</form>
+</body> 
+</html>
