@@ -87,7 +87,7 @@ alert( " Иванов Иван, Петров Пётр, Ульянова Улья
 let a=[],s=[" Иванов Иван, Петров Пётр, Ульянова Ульяна, 1"],d
 for (let i=0;;i++) {
 	a[i]=s[i].slice(0,s[i].indexOf(','));
-	s[i+1]=s[i].slice(s[i].indexOf(',')+1,s[i].indexOf('1')); //копир в другую строку начиная с след слова
+	s[i+1]=s[i].slice(s[i].indexOf(',')+1,s[i].indexOf('1'));
 	if (s[i+1].length<4)break
 	d=i;
 }
